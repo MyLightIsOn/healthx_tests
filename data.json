@@ -1,5 +1,13 @@
 [
   {
-    "title":"Healthx App"
+    "title": "Healthx App",
+    "mainMenu": [
+      "Account Information",
+      "Plan Overview",
+      "Manage Stuff",
+      "ID Card",
+      "Contact Us",
+      "Help"
+    ]
   }
 ]
