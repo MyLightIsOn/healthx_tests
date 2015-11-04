@@ -3,6 +3,7 @@
   "description": "Prototype for user testing",
   "license": "MIT",
   "homepage": "https://github.com/MyLightIsOn/healthx_tests",
+  "main": "",
   "moduleType": [],
   "private": true,
   "ignore": [
