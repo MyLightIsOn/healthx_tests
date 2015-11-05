@@ -42,3 +42,37 @@
         font-weight: bold;
     }
 }
+
+.primary-nav {
+    width: 85%;
+    position: relative;
+    left: -100%;
+    transition: 0.5s;
+
+    li {
+        display: block;
+        width: 100%;
+        border: 1px solid @black;
+        font-size: 1.5em;
+        padding: 15px 20px;
+        position: relative;
+
+        span {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+    }
+
+    li.nav-header {
+        background-color: @gray;
+        font-size: 1em;
+        padding: 10px 0;
+        text-align: center;
+        color: @white;
+    }
+}
+
+.nav-active {
+    left: 0;
+}

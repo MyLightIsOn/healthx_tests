@@ -2,12 +2,55 @@
   {
     "title": "Healthx App",
     "mainMenu": [
-      "Account Information",
-      "Plan Overview",
-      "Manage Stuff",
-      "ID Card",
-      "Contact Us",
-      "Help"
+      {
+        "navTitle" : "Account Information",
+        "navItems": [
+          "Primary Member Info",
+          "Dependents",
+          "Payment",
+          "Privacy",
+          "Security",
+          "Notifications"
+        ]
+      },
+      {
+        "navTitle" : "Plan Overview",
+        "navItems": [
+          "Plan Info",
+          "Deductible",
+          "HSA/FSA"
+        ]
+      },
+      {
+        "navTitle" : "Manage Stuff",
+        "navItems": [
+          "Find A Doctor",
+          "Prescriptions",
+          "Payment Portal"
+        ]
+      },
+      {
+        "navTitle" : "ID Card",
+        "navItems": [
+          "Primary",
+          "Dependent 1",
+          "Dependent 2"
+        ]
+      },
+      {
+        "navTitle" : "Contact Us",
+        "navItems": [
+          "My Contacts",
+          "Messages"
+        ]
+      },
+      {
+        "navTitle" : "Help",
+        "navItems": [
+          "FAQ",
+          "Glossary"
+        ]
+      }
     ]
   }
 ]
