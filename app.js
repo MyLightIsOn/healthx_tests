@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var hbs = require('hbs');
 
 var routes = require('./routes/index');
+var menu1 = require('./routes/menu1');
 var users = require('./routes/users');
 
 
@@ -28,7 +29,9 @@ app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
+// Routes
 app.use('/', routes);
+app.use('/menu1', menu1);
 app.use('/users', users);
 
 // catch 404 and forward to error handler

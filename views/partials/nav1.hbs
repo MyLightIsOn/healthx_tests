@@ -1,0 +1,32 @@
+<div id="nav-container" class="wireframe">
+    <button class="menu-button glyphicon glyphicon-menu-hamburger"></button>
+    <div class="branding">
+        <img src="/images/img_placeholder.png" class="menu-logo">
+        <h1>{{title}}</h1>
+    </div>
+    <span class="logout-app glyphicon glyphicon-off"></span>
+</div>
+
+<div class="primary-nav">
+    <ul>
+        <li class="nav-header">Main Menu</li>
+        {{#each mainMenu}}
+        <li class="primary-nav-button">{{navTitle}}</li>
+        {{/each}}
+        <li class="nav-back">Back<span class="glyphicon glyphicon-chevron-left"></span></li>
+    </ul>
+</div>
+
+<div class="secondary-nav">
+
+    {{#each mainMenu}}
+        <ul>
+            <li class="nav-header secondary-header">{{navTitle}}</li>
+            {{#each navItems}}
+                <li>{{this}}</li>
+            {{/each}}
+            <li class="nav-back">Back<span class="glyphicon glyphicon-chevron-left"></span></li>
+        </ul>
+    {{/each}}
+
+</div>

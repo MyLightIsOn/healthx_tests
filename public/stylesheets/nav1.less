@@ -1,0 +1,143 @@
+@import "variables.less";
+
+#nav1-test {
+
+    #nav-container {
+        height: 50px;
+        width: 100%;
+        position: relative;
+
+        .menu-button {
+            position: absolute;
+            left: 4px;
+            top: 6px;
+            font-size: 2.25em;
+            border: 0;
+            background: transparent;
+        }
+
+        .menu-logo {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+        }
+
+        .branding {
+            position: relative;
+            width: 155px;
+            height: 50px;
+            margin: auto;
+            padding-top: 9px;
+
+            h1 {
+                position: absolute;
+                left: 35px;
+                top: 13px;
+                margin: 0;
+                font-size: 1.25em;
+            }
+        }
+
+        .logout-app {
+            position: absolute;
+            top: 13px;
+            right: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+
+    .primary-nav {
+        width: 85%;
+        min-height: 100%;
+        position: fixed;
+        left: -100%;
+        transition: 0.5s;
+        background-color: @gray * 2;
+
+        li {
+            display: block;
+            width: 100%;
+            border: 1px solid @black;
+            font-size: 1.5em;
+            padding: 15px 20px;
+            position: relative;
+            background-color: @white;
+
+            span {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+        }
+
+        .nav-back {
+            text-align: center;
+
+            span {
+                right: auto;
+                left: 17px;
+            }
+        }
+
+        li.nav-header {
+            background-color: @gray;
+            font-size: 1em;
+            padding: 10px 0;
+            text-align: center;
+            color: @white;
+        }
+    }
+
+    .secondary-nav {
+        width: 85%;
+        min-height: 100%;
+        position: fixed;
+        left: -100%;
+        transition: 0.5s;
+        background-color: @gray * 2;
+
+        ul {
+            display: none;
+        }
+
+        li {
+            display: block;
+            width: 100%;
+            border: 1px solid @black;
+            font-size: 1.5em;
+            padding: 15px 20px;
+            position: relative;
+            background-color: @white;
+
+            span {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+        }
+
+        .nav-back {
+            text-align: center;
+
+            span {
+                right: auto;
+                left: 17px;
+            }
+        }
+
+        li.nav-header {
+            background-color: @gray;
+            font-size: 1em;
+            padding: 10px 0;
+            text-align: center;
+            color: @white;
+        }
+
+    }
+
+    .nav-active {
+        left: 0;
+    }
+
+}
