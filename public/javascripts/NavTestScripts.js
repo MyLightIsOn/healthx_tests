@@ -1,9 +1,10 @@
 myApp = {
-    init: function(){
+    NavTestInit: function(){
         var nav1Test = document.getElementById('nav1-test');
 
         myApp.navOn(nav1Test);
         myApp.primaryNav(nav1Test);
+        myApp.secondaryNav(nav1Test);
     },
 
     //Handle navigation animation
@@ -42,7 +43,6 @@ myApp = {
                         $(secondaryHeader[i]).parent().css('display', 'none');
 
                     } else {
-                        console.log($(secondaryHeader[i]))
                         $(secondaryHeader[i]).css('display', 'block');
                         $(secondaryHeader[i]).parent().css('display', 'block');
 
@@ -52,7 +52,19 @@ myApp = {
                 $('.secondary-nav').addClass('nav-active');
             });
         }
+    },
+
+    secondaryNav: function(nav1Test){
+        $('.secondary-nav-button').click(function(){
+            if(nav1Test != null){
+                var selectedPageName = $(this).text();
+
+                $('.secondary-nav').toggleClass('nav-active');
+                $('.primary-nav').toggleClass('nav-active');
+                $('.page-title').text(selectedPageName)
+            }
+        });
     }
 };
 
-myApp.init();
+myApp.NavTestInit();
